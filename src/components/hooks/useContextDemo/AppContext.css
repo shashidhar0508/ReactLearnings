@@ -1,0 +1,13 @@
+.light {
+  background-color: yellow;
+  color: blue;
+  border: 1px solid red;
+  border-radius: 40px;
+}
+
+.dark {
+  background-color: black;
+  color: yellow;
+  border: 1px solid red;
+  border-radius: 10px;
+}

@@ -1,0 +1,6 @@
+1. Added bootstrapcdn in index.html
+
+2. Props : 
+    -> The data which we are passing from parent to child.
+
+    Redux is a immutable state component.
