@@ -1,6 +1,11 @@
 import React from "react";
 import { Route, Link, Switch } from "react-router-dom";
 import { Home } from "./Home";
+import { Customers } from "./Customers";
+import Cars from "./Cars";
+import CarDetails from "./CarDetails";
+import { Greet } from "./Greet";
+import Login from "./Login";
 
 export const Layout = () => (
   <div>
@@ -32,7 +37,7 @@ export const Layout = () => (
         <Route path="/users" component={Customers}></Route>
         <Route path="/login" component={Login}></Route>
         <Route path="/cars" component={Cars}></Route>
-        <Route path="/carDetails:/carId" component={carDetails}></Route>
+        <Route path="/carDetails/:carId" component={CarDetails}></Route>
         <Route
           path="/greet/:username"
           render={(props) => <Greet {...props} />}
