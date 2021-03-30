@@ -3,6 +3,7 @@
 import React from "react";
 import ContextDemo from "../contextAPI/ContextDemo";
 import TableMaterialUI from "../DemoTablesMaterialUI/TableMaterialUI";
+import ClickCounter from "../HOC/ClickCounter";
 import Button from "../hooks/hook1";
 import Button1 from "../hooks/hook2";
 import DataLoader from "../hooks/hook3";
@@ -61,6 +62,8 @@ export default class Dashboard extends React.Component {
         <DataLoader /> */}
 
         <CompLifeCycle />
+
+        <ClickCounter />
 
         {/* <TableMaterialUI /> */}
 
