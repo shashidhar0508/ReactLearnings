@@ -15,9 +15,9 @@ export default class ChildParentInvoke extends Component {
     return (
       <>
         <h1 className="text-success">Parent Component</h1>
-        <h2 className="text-danger bg-info">State data:   {this.state.data}</h2>
+        <h2 className="text-danger bg-info">State data: {this.state.data}</h2>
         <br />
-        <h2 className="bg-warning">Child Component</h2>
+        <h2 className="bg-warning">Child C omponent</h2>
         <Content
           myDataProp={this.state.data}
           updateSateProp={(event) => this.updateState(event)}
