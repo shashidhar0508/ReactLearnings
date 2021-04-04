@@ -10,26 +10,7 @@ import DataLoader from "../hooks/hook3";
 import ChildParentInvoke from "../intercomp/ChildParentInvoke";
 import CompLifeCycle from "../lifecycle/CompLifeCycle";
 import RefDemo from "../propsstates/RefDemo";
-
-// import Countdown from "react-countdown";
-
-const Completionist = () => <span>You are good to go!</span>;
-
-const renderer = ({ hours, minutes, seconds, completed }) => {
-  if (completed) {
-    // Render a completed state
-    <h2>Hi</h2>;
-    return <Completionist />;
-  } else {
-    // Render a countdown
-    <h2>Hello</h2>;
-    return (
-      <span>
-        {hours}:{minutes}:{seconds}
-      </span>
-    );
-  }
-};
+import ReducerDemo from "../hooks/hook4";
 
 //In StateFul Functional Components props will be taken in constructor
 // In "stateless" we can return directly but in "stateful" component we need to render then return
@@ -51,7 +32,7 @@ export default class Dashboard extends React.Component {
         <h1 className="bg-info text-center">Welcome to {this.props.company}</h1>
         {/* If we this.state whole json object will be passed*/}
         <child desg={this.state.job} />
-        <RefDemo />
+        {/* <RefDemo /> */}
 
         {/* <ChildParentInvoke /> */}
 
@@ -61,9 +42,13 @@ export default class Dashboard extends React.Component {
         <Button1 />
         <DataLoader /> */}
 
-        <CompLifeCycle />
+        {/* <CompLifeCycle /> */}
 
-        <ClickCounter />
+        {/* <ClickCounter /> */}
+
+        <section>
+          <ReducerDemo />
+        </section>
 
         {/* <TableMaterialUI /> */}
 
