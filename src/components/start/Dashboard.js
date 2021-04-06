@@ -11,6 +11,7 @@ import ChildParentInvoke from "../intercomp/ChildParentInvoke";
 import CompLifeCycle from "../lifecycle/CompLifeCycle";
 import RefDemo from "../propsstates/RefDemo";
 import ReducerDemo from "../hooks/hook4";
+import { FormValidation } from "../../forms/validation";
 
 //In StateFul Functional Components props will be taken in constructor
 // In "stateless" we can return directly but in "stateful" component we need to render then return
@@ -47,7 +48,9 @@ export default class Dashboard extends React.Component {
         {/* <ClickCounter /> */}
 
         <section>
-          <ReducerDemo />
+          {/* <ReducerDemo /> */}
+
+          <FormValidation />
         </section>
 
         {/* <TableMaterialUI /> */}
